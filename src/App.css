@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000000;
+  }
+  
+  #root {
+    background-color: rgb(74, 74, 74);
+  }
+  
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .imagen {
+    width: 20rem;
+    height: 11rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .imagen:hover {
+    transform: scale(1.05);
+  }
+  
+  .imagenesCont {
+    max-width: 66rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .imgFull {
+    position: fixed;
+    width: 80vw;
+    height: 90vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    top: 5%;
+    left: 10%;
+    color: white;
+    visibility: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .imgFull img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  
+  .title {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+    padding: 0.5rem;
+    visibility: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+  
+  .visible {
+    visibility: visible;
+    overflow: hidden;
+  }
+  
+  .fa-x {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 2%;
+    left: 97%;
+    z-index: 20;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+    transition: background-color 2s ease-in-out;
+  }
+  .fa-x:hover{
+transform:scale(1.1);
+  }
+  
+  .container {
+    display: flex;
+    padding: 3rem 1rem;
+    width: 100%;
+    background: rgb(255, 255, 255);
+  }
+  
+  .createCont {
+    height: 50vh;
+    min-width: 19rem;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    background-color: rgb(74, 74, 74);
+    color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.3rem;
+  }
+  
+  .input {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .file {
+    font-size: 0.7rem;
+    width: 90%;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    padding: 0.2rem 2.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
